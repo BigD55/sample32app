@@ -1,8 +1,15 @@
 <header class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-    
-      <%= link_to "sample app", root_path, id: "logo" %>
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+     </a>    
+     <%= link_to "sample app", root_path, id: "logo" %>
+        <!-- Everything you want hidden at 940px or less, place within here -->
+     <div class="nav-collapse">
       <nav>
         <ul class="nav pull-right">
           <li><%= link_to "Home", root_path %></li>
@@ -27,6 +34,7 @@
           <% end %>
         </ul>
       </nav>
+     </div>
     </div>
   </div>
 </header>

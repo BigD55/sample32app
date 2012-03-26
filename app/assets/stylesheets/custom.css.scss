@@ -1,4 +1,11 @@
 @import "bootstrap";
+body {
+  padding-top: 60px;
+}
+/* Das Folgende ist die einzige Änderung 
+außer dem Einfügen des "collapsible" codes in den Header
+um die Mobile Anpassung für die Sample App zum Arbeiten zu bringen */
+@import "bootstrap-responsive";
 
 /* mixins, variables, etc. */
 
@@ -22,10 +29,6 @@ $grayMediumLight: #eaeaea;
 
 html {
   overflow-y: scroll;
-}
-
-body {
-  padding-top: 60px;
 }
 
 section {
